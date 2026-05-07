@@ -3,122 +3,131 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Recomendador Personalizado de Conteúdos Educacionais</title>
-  <meta name="description" content="Aplicação experimental para rastrear interações com recursos educacionais digitais e apoiar recomendações personalizadas de aprendizagem." />
+  <title>E-book Rastreável | Recomendador Personalizado</title>
+  <meta name="description" content="E-book interativo com texto, vídeo, quiz e rastreamento local de consumo de conteúdos educacionais." />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="hero">
+  <header class="hero ebook-hero">
     <nav class="navbar">
       <div class="brand">Personalized Content Recommender</div>
-      <a class="nav-link" href="#como-funciona">Como funciona</a>
+      <a class="nav-link" href="#dashboard">Painel de rastreamento</a>
     </nav>
 
     <section class="hero-content">
-      <p class="eyebrow">Educação • Dados • Inteligência Artificial</p>
-      <h1>Recomendador Personalizado de Conteúdos Educacionais</h1>
+      <p class="eyebrow">Protótipo de e-book rastreável</p>
+      <h1>Aprendizagem personalizada com dados de consumo</h1>
       <p class="subtitle">
-        Uma aplicação experimental para rastrear interações de estudantes com recursos digitais
-        e apoiar recomendações personalizadas de aprendizagem com base em dados de consumo,
-        desempenho e engajamento.
+        Esta página simula um e-book interativo com texto, vídeo e quiz. Durante a navegação,
+        alguns eventos são registrados localmente para demonstrar como a rastreabilidade pode
+        apoiar recomendações educacionais.
       </p>
       <div class="hero-actions">
-        <a class="button primary" href="#problema">Conhecer a proposta</a>
-        <a class="button secondary" href="#resultado">Ver resultado esperado</a>
+        <a class="button primary" href="#capitulo-1">Iniciar leitura</a>
+        <a class="button secondary" href="#dashboard">Ver dados rastreados</a>
       </div>
     </section>
   </header>
 
-  <main>
-    <section id="problema" class="section">
-      <div class="section-header">
-        <p class="eyebrow">Problema educacional</p>
-        <h2>Como tornar a aprendizagem digital mais personalizada?</h2>
-      </div>
-      <p>
-        Ambientes virtuais de ensino e aprendizagem registram muitos dados, mas nem sempre
-        transformam esses registros em decisões pedagógicas. O desafio é compreender como cada
-        estudante consome conteúdos, realiza atividades, demonstra dificuldades e desenvolve
-        competências ao longo do processo formativo.
-      </p>
-    </section>
+  <main class="ebook-layout">
+    <aside class="toc" aria-label="Sumário do e-book">
+      <strong>Sumário</strong>
+      <a href="#capitulo-1">1. Rastreabilidade</a>
+      <a href="#video-aula">2. Vídeo explicativo</a>
+      <a href="#quiz">3. Quiz</a>
+      <a href="#recomendacao">4. Recomendação</a>
+      <a href="#dashboard">5. Painel</a>
+    </aside>
 
-    <section class="cards">
-      <article class="card">
-        <span class="card-number">01</span>
-        <h3>Rastreabilidade</h3>
+    <article class="ebook-content">
+      <section id="capitulo-1" class="content-block tracked" data-resource="texto-rastreabilidade">
+        <p class="eyebrow">Capítulo 1</p>
+        <h2>O que é rastrear o consumo de conteúdos?</h2>
         <p>
-          Registro das interações com textos, vídeos, podcasts, quizzes e demais recursos digitais.
+          Rastrear o consumo de conteúdos significa registrar evidências de interação do estudante
+          com recursos digitais de aprendizagem. Essas evidências podem incluir acessos, tempo de
+          permanência, cliques, rolagem da página, conclusão de atividades e desempenho em quizzes.
         </p>
-      </article>
-      <article class="card">
-        <span class="card-number">02</span>
-        <h3>Análise de aprendizagem</h3>
         <p>
-          Organização dos dados de acesso, permanência, participação, desempenho e evolução.
+          Quando esses dados são organizados de forma responsável, tornam-se uma base importante
+          para compreender padrões de engajamento, dificuldades recorrentes e oportunidades de
+          personalização da aprendizagem.
         </p>
-      </article>
-      <article class="card">
-        <span class="card-number">03</span>
-        <h3>Recomendação personalizada</h3>
-        <p>
-          Apoio à indicação de conteúdos mais adequados ao perfil, às necessidades e ao progresso do estudante.
-        </p>
-      </article>
-    </section>
+        <div class="callout">
+          <strong>Ideia central:</strong> a recomendação personalizada começa quando o ambiente de aprendizagem
+          deixa de apenas disponibilizar conteúdos e passa a observar como esses conteúdos são consumidos.
+        </div>
+        <button class="button small" data-complete="texto-rastreabilidade">Marcar texto como lido</button>
+      </section>
 
-    <section id="como-funciona" class="section split">
-      <div>
-        <p class="eyebrow">Como funciona</p>
-        <h2>Da interação com conteúdos à recomendação inteligente</h2>
+      <section id="video-aula" class="content-block tracked" data-resource="video-explicativo">
+        <p class="eyebrow">Recurso multimídia</p>
+        <h2>Vídeo: dados como evidência de aprendizagem</h2>
         <p>
-          A proposta combina uma aplicação web rastreável, coleta estruturada de dados educacionais
-          e técnicas de inteligência artificial para apoiar a tomada de decisão pedagógica.
+          O vídeo abaixo é um espaço de demonstração. Ele pode ser substituído por uma videoaula real
+          do projeto, hospedada no YouTube, Vimeo ou em outro repositório institucional.
         </p>
-      </div>
-      <ol class="timeline">
-        <li>O estudante acessa recursos de aprendizagem em uma trilha digital.</li>
-        <li>A aplicação registra eventos de consumo, participação e desempenho.</li>
-        <li>Os dados são organizados para análise de engajamento e desenvolvimento de competências.</li>
-        <li>O sistema apoia recomendações de novos conteúdos, revisões ou desafios.</li>
-      </ol>
-    </section>
+        <div class="video-frame">
+          <iframe
+            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+            title="Vídeo demonstrativo"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+        <button class="button small" data-complete="video-explicativo">Marcar vídeo como assistido</button>
+      </section>
 
-    <section class="section highlight">
-      <p class="eyebrow">Dados acompanhados</p>
-      <h2>O que pode ser observado?</h2>
-      <div class="tag-grid">
-        <span>Acessos aos materiais</span>
-        <span>Tempo de permanência</span>
-        <span>Conclusão de atividades</span>
-        <span>Resultados em quizzes</span>
-        <span>Engajamento por recurso</span>
-        <span>Evolução de competências</span>
-      </div>
-    </section>
+      <section id="quiz" class="content-block tracked" data-resource="quiz-rastreabilidade">
+        <p class="eyebrow">Atividade avaliativa</p>
+        <h2>Quiz rápido</h2>
+        <form id="quizForm" class="quiz">
+          <fieldset>
+            <legend>1. Qual dado ajuda a compreender o engajamento do estudante?</legend>
+            <label><input type="radio" name="q1" value="a" /> Apenas o nome do estudante.</label>
+            <label><input type="radio" name="q1" value="b" /> Tempo de permanência, acessos e conclusão de atividades.</label>
+            <label><input type="radio" name="q1" value="c" /> A cor usada na interface do curso.</label>
+          </fieldset>
 
-    <section id="resultado" class="section split reverse">
-      <div>
-        <p class="eyebrow">Resultado esperado</p>
-        <h2>Uma base para personalizar a experiência de aprendizagem</h2>
-        <p>
-          Espera-se demonstrar como a rastreabilidade das interações pode apoiar professores,
-          gestores e estudantes na construção de percursos educacionais mais responsivos,
-          orientados por evidências e conectados ao desenvolvimento de competências.
+          <fieldset>
+            <legend>2. Qual é uma possível finalidade da rastreabilidade?</legend>
+            <label><input type="radio" name="q2" value="a" /> Apoiar recomendações de conteúdos e intervenções pedagógicas.</label>
+            <label><input type="radio" name="q2" value="b" /> Substituir totalmente o professor.</label>
+            <label><input type="radio" name="q2" value="c" /> Eliminar todas as avaliações.</label>
+          </fieldset>
+
+          <button class="button primary small" type="submit">Enviar respostas</button>
+        </form>
+        <div id="quizResult" class="result" aria-live="polite"></div>
+      </section>
+
+      <section id="recomendacao" class="content-block recommendation">
+        <p class="eyebrow">Recomendação simulada</p>
+        <h2>Próximo conteúdo sugerido</h2>
+        <p id="recommendationText">
+          Interaja com o texto, o vídeo e o quiz para receber uma recomendação simulada.
         </p>
-      </div>
-      <div class="impact-box">
-        <strong>Propósito do projeto</strong>
-        <p>
-          Conectar dados educacionais, inteligência artificial e inovação pedagógica para ampliar
-          a personalização, o acompanhamento e a efetividade dos ambientes virtuais de aprendizagem.
-        </p>
-      </div>
-    </section>
+      </section>
+
+      <section id="dashboard" class="content-block dashboard">
+        <p class="eyebrow">Painel de rastreamento local</p>
+        <h2>Dados de consumo registrados nesta sessão</h2>
+        <div class="metrics">
+          <div><span id="accessCount">0</span><small>Acessos à página</small></div>
+          <div><span id="completedCount">0</span><small>Recursos concluídos</small></div>
+          <div><span id="quizScore">-</span><small>Resultado do quiz</small></div>
+          <div><span id="timeOnPage">0s</span><small>Tempo na página</small></div>
+        </div>
+        <pre id="eventLog" class="event-log"></pre>
+        <button class="button secondary small" id="clearData">Limpar dados locais</button>
+      </section>
+    </article>
   </main>
 
   <footer>
-    <p>Projeto experimental • Personalized Content Recommender</p>
+    <p>Protótipo experimental • Dados registrados apenas no navegador do usuário</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
