@@ -43,7 +43,3 @@ https://personalized-content-recommender.github.io/demo-repository/
 - Estruturar uma base de dados educacional.
 - Criar painel para professores e gestores.
 - Implementar recomendações iniciais de conteúdos.
-
-## Licença
-
-MIT
